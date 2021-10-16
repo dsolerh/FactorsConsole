@@ -1,4 +1,7 @@
 ﻿using System;
+using FactorsLib;
+
+using static System.Console;
 
 namespace FactorsConsole
 {
@@ -6,7 +9,9 @@ namespace FactorsConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Testing Factors Functionalities!!");
+            int[] primeFactors = Factors.PrimeFactors(30);
+            WriteLine($"the prime factors of 30 are {primeFactors}");
         }
     }
 }
